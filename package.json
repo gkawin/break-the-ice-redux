@@ -1,0 +1,40 @@
+{
+  "name": "break-the-ice-redux",
+  "version": "1.0.0",
+  "description": "Long time no see the Redux. Yay, It times to recover the almost forgotten knowleage.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js --port 9000 --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkawin/break-the-ice-redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkawin/break-the-ice-redux/issues"
+  },
+  "homepage": "https://github.com/gkawin/break-the-ice-redux#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
