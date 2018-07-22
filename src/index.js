@@ -1,19 +1,22 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { translate, I18nextProvider } from 'react-i18next'
 
-class App extends React.Component {
-  render () {
-    return (
-      <div>
-        <h1>DEMO CHANGE THE LANGUAGES FROM GOOGLE SHEET</h1>
-        <table>
+import i18nextInstance from './i18nInstance'
+
+const App = translate()(({ t }) => {
+  return (
+    <div>
+      <h1>DEMO CHANGE THE LANGUAGES FROM GOOGLE SHEET</h1>
+      <table>
+        <tbody>
           <tr>
             <td>Available Language: </td>
             <td>
-              <select>
-                <option>ไทย</option>
-                <option>English</option>
-                <option>Japanese</option>
+              <select onChange={(e) => i18nextInstance.changeLanguage(e.target.value) } value='en'>
+                <option value='en'>English</option>
+                <option value='th'>ไทย</option>
+                <option value='jp'>Japanese</option>
               </select>
             </td>
           </tr>
@@ -22,14 +25,18 @@ class App extends React.Component {
               <h1>Afftected Content</h1>
               <div style={{ border: '2px solid #000', height: 0, width: '100%' }}></div>
               <div>
-                fpp
+                {t('eapp.section.title')}
               </div>
             </td>
           </tr>
-        </table>
-      </div>
-    )
-  }
-}
+        </tbody>
+      </table>
+    </div>
+  )
+})
 
-render(<App />, document.getElementById('app'))
+render(
+<I18nextProvider i18n={i18nextInstance}>
+    <App / >
+  </I18nextProvider>
+  , document.getElementById('app'))

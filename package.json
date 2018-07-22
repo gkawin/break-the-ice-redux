@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/gkawin/break-the-ice-redux#readme",
   "dependencies": {
+    "i18next": "^11.4.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-i18next": "^7.9.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "reselect": "^3.0.1"
