@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -8,10 +9,9 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    publicPath: '/asserts'
+    filename: '[name].js'
   },
-  modules: {
+  module: {
     rules: [
       {
         test: /\.js$/,
@@ -20,6 +20,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/index.html',
+      chunks: ['app']
+    })
+  ],
+  devServer: {
+    compress: true,
+    clientLogLevel: 'error'
+  }
 }
