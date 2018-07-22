@@ -16,7 +16,7 @@ const App = translate()(({ t }) => {
               <select onChange={(e) => i18nextInstance.changeLanguage(e.target.value) } value='en'>
                 <option value='en'>English</option>
                 <option value='th'>ไทย</option>
-                <option value='jp'>Japanese</option>
+                <option value='ja'>Japanese</option>
               </select>
             </td>
           </tr>
@@ -25,7 +25,19 @@ const App = translate()(({ t }) => {
               <h1>Afftected Content</h1>
               <div style={{ border: '2px solid #000', height: 0, width: '100%' }}></div>
               <div>
-                {t('eapp.section.title')}
+                {
+                  t('eapp.section.fatca.title')
+                }
+              </div>
+              <div>
+                {
+                  t('eapp.section.fatca.mother_place')
+                }
+              </div>
+              <div>
+                {
+                  t('eapp.section.fatca.been_usa')
+                }
               </div>
             </td>
           </tr>

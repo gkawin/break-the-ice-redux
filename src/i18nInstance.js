@@ -6,6 +6,8 @@ i18next
   .init({
     fallbackLng: 'en',
     debug: true,
+    keySeparator: false,
+    resources: require('./language/translated-data.json'),
     react: {
       wait: false,
     }
