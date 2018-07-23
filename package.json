@@ -1,7 +1,7 @@
 {
   "name": "demo-google-sheet-localization",
   "version": "1.0.0",
-  "description": "Long time no see the Redux. Yay, It times to recover the almost forgotten knowleage.",
+  "description": "demo App man localization file.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --port 9000 --inline --hot",
