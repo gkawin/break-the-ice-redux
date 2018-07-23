@@ -1,2 +1,12 @@
-# break-the-ice-redux
-Long time no see the Redux. Yay, It times to recover the almost forgotten knowleage.
+# DEMO_GOOGLE_SHEET_LOCALIZATION
+install
+```sh
+yarn
+```
+after that
+```sh
+yarn dev
+```
+
+try to change the select the dropdown to see the result.
+
