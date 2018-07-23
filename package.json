@@ -1,11 +1,12 @@
 {
-  "name": "break-the-ice-redux",
+  "name": "demo-google-sheet-localization",
   "version": "1.0.0",
   "description": "Long time no see the Redux. Yay, It times to recover the almost forgotten knowleage.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --port 9000 --inline --hot",
-    "i18n": "node src/language"
+    "i18n": "node src/language",
+    "postinstall": "yarn i18n"
   },
   "repository": {
     "type": "git",
